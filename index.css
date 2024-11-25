@@ -1,0 +1,94 @@
+*{
+    background-color: hsl(275, 100%, 97%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work-Sans";
+}
+
+body{
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  height: 200px;
+  padding: 40px;
+}
+
+.faq-header{
+  background-color:hsl(0, 0%, 100%);
+  display: flex;
+  padding: 20px;
+  margin: 0;
+}
+
+.faq-header h1{
+  background-color:hsl(0, 0%, 100%);
+  font-weight: 700 bold;
+}
+
+.faq-header img{
+  background-color:hsl(0, 0%, 100%);
+}
+
+.faq{
+    background-color:hsl(0, 0%, 100%);
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    padding: 0px;
+    margin: auto;
+}
+
+.accordion {
+    background-color: hsl(0, 0%, 100%);
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 95%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.4s;
+  }
+
+  .panel p{
+    background-color: hsl(0, 0%, 100%);
+    text-align: left;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .active, .accordion:hover {
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  .accordion:after {
+    content: url(/assets/images/icon-plus.svg);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: url(/assets/images/icon-minus.svg);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /* Mobile design */
+  @media screen and (max-width: 375px){
+    body{
+      background-image: url("/assets/images/background-pattern-mobile.svg");
+    }
+    .faq{
+      width: 320px;
+    }
+  }
