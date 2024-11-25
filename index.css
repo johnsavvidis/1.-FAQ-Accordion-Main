@@ -7,7 +7,7 @@
 }
 
 body{
-  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-image: url(assets/images/background-pattern-desktop.svg);
   height: 200px;
   padding: 40px;
 }
@@ -87,7 +87,7 @@ body{
   /* Mobile design */
   @media screen and (max-width: 375px){
     body{
-      background-image: url("assets/images/background-pattern-mobile.svg");
+      background-image: url(assets/images/background-pattern-mobile.svg);
     }
     .faq{
       width: 320px;
