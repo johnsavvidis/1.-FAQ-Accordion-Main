@@ -61,7 +61,7 @@ body{
   }
   
   .active, .accordion:hover {
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(292, 16%, 49%)
   }
   
   .accordion:after {
