@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Work-Sans";
+    font-family: url(assets/fonts/static/WorkSans-Regular.ttf);
+    
 }
 
 body{
@@ -15,8 +16,7 @@ body{
 .faq-header{
   background-color:hsl(0, 0%, 100%);
   display: flex;
-  padding: 32px;
-  margin: 0;
+  padding: 15px 0px 15px 5px;
 }
 
 .faq-header h1{
@@ -39,12 +39,14 @@ body{
 }
 
 .accordion {
+    display: flex;
+    justify-content: space-between;
     background-color: hsl(0, 0%, 100%);
     color: #444;
     cursor: pointer;
     padding: 10px;
     margin-left: 0px;
-    width: 90%;
+    width: 100%;
     border: none;
     text-align: left;
     outline: none;
@@ -55,8 +57,9 @@ body{
 
   .panel p{
     background-color: hsl(0, 0%, 100%);
+    color: hsl(292, 16%, 49%);
     text-align: left;
-    padding: 15px;
+    padding: 0px;
     width: 100%;
     font-size: 16px;
     font-weight: 400;
@@ -78,7 +81,7 @@ body{
   }
   
   .panel {
-    padding: 0 18px;
+    padding: 0 10px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
